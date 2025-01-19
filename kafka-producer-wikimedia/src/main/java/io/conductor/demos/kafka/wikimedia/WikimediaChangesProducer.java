@@ -5,7 +5,6 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 
-import java.beans.EventHandler;
 import java.net.URI;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -13,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class WikimediaChangesProducer {
     public static void main(String[] args) throws InterruptedException {
 
-        String bootstrapServers = "localhost:9092";
+        String bootstrapServers = "localhost:9094";
 
         // create producer properties
         Properties properties = new Properties();
